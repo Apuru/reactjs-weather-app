@@ -66,9 +66,9 @@ class Weather extends React.Component {
       return (
         <div>
           <h1>Today&#39;s weather in {this.state.city}</h1>
-          Current temperature: {this.state.curTemp}<br />
-          Min temperature: {this.state.minTemp}<br />
-          Max temperature: {this.state.maxTemp}<br />
+          Current temperature: {this.state.curTemp} C<br />
+          Min temperature: {this.state.minTemp} C<br />
+          Max temperature: {this.state.maxTemp} C<br />
         </div>
       );
     }
@@ -77,7 +77,7 @@ class Weather extends React.Component {
 
 // a function to update the other component
 var updateState = function (text) {
-  // unbound apparently, this is ridiculously important 
+  // unbound apparently, this is ridiculously important
   // this.setState( {city: text}, this.handleSearch() )
   this.setState( {city: text}, () => this.handleSearch() )
 }
