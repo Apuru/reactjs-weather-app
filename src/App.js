@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
 
+import Buttons from './weather-components/Buttons';
+
 const Root = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,8 +10,14 @@ const Root = styled.div`
 `
 
 class App extends Component {
+
   render() {
-    return <Root />
+    return (
+      <div>
+        <Buttons />
+        <Root />
+      </div>
+    )
   }
 }
 
