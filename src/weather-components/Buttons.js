@@ -3,7 +3,7 @@ import React from 'react';
 // const request = require('request');
 import request from 'request';
 
-var apiKey = "";
+var apiKey = "a496cf85e1b4576ff6c05fe6f881e5b9";
 
 class Weather extends React.Component {
   constructor(props) {
@@ -96,10 +96,7 @@ export default class Buttons extends React.Component {
     };
   }
 
-  // a function to update the other component
   updateState(text) {
-    // unbound apparently, this is ridiculously important
-    // this.setState( {city: text}, this.handleSearch() )
     this.setState( {city: text} )
   }
 
@@ -139,7 +136,7 @@ export default class Buttons extends React.Component {
         Montreal</button>
 
         <button
-        className={btn_class3}
+        className={btn_class("Ottawa")}
         onClick={this.ottawa.bind(this)}>
         Ottawa</button>
 
