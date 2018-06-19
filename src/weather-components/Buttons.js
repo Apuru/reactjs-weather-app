@@ -3,7 +3,7 @@ import React from 'react';
 // const request = require('request');
 import request from 'request';
 
-var apiKey = "a496cf85e1b4576ff6c05fe6f881e5b9";
+var apiKey = "";
 
 class Weather extends React.Component {
   constructor(props) {
